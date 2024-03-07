@@ -5,7 +5,7 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
         Passageiro passageiro1 = new Passageiro("Edna","edna.moda@gmail.com","trovaoazul",998760909);
-        Passageiro joca = new Passageiro();
+        Passageiro passageiro2 = new Passageiro();
 
 
         Motorista motorista1 = new Motorista("Claudia","Cnh Ear", 4,"claudinha@gmail.com", "solamarelo", "Curitiba", "viagens");
@@ -14,7 +14,25 @@ public class Main {
         Carro carro1 = new Carro("Clio",2009,"Cinza","AUU0902","Renault");
         Carro carro2 = new Carro();
 
+        Pagamento pagamento1 = new Pagamento(true,false,false,false,false,89,6);
+        Pagamento pagamento2 = new Pagamento();
 
+        System.out.println("CONFIRMAÇÃO DADOS PASSAGEIRO 1");
+        System.out.println("Seu nome é: "+passageiro1.getNome());
+        System.out.println("Seu celular é: "+passageiro1.getCelular());
+        System.out.println(" ");
+        System.out.println("ALTERAÇÃO DE DADOS PASSAGEIRO 2");
+        System.out.println("Seu antigo nome :"+passageiro2.getNome());
+        passageiro2.setNome("Jocacio");
+        System.out.println("Seu novo nome é :"+passageiro2.getNome());
+        System.out.println(" ");
+        System.out.println("VERIFICANDO AVALIAÇÃO DO MOTORISTA 1");
+        System.out.println("A avaliação do motorista 1 é "+ motorista1.getAvaliacaoM()+" estrelas");
+        System.out.println(" ");
+        System.out.println("ALTERAÇÃO DE PREÇO NO PAGAMENTO!!!");
+        System.out.println("O antigo valor era: "+pagamento1.getPreco());
+        pagamento1.setPreco(57);
+        System.out.println("O novo valor está: "+pagamento1.getPreco());
 
 
 
