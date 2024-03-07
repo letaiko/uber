@@ -1,12 +1,29 @@
 public class Motorista {
 
-    public String nome;
-    public String tipoCnh;
-    public int avaliacaoM;
-    public String email;
-    public String senha;
-    public String cidade;
-    public String tipoCorrida;
+    private String nome;
+    private String tipoCnh;
+    private int avaliacaoM;
+    private String email;
+    private String senha;
+    private String cidade;
+    private String tipoCorrida;
+
+    public Motorista(String nome, String tipoCnh,int avaliacaoM,String email, String senha, String cidade, String tipoCorrida){
+        this.nome = nome;
+        this.tipoCnh = tipoCnh;
+        this.avaliacaoM = avaliacaoM;
+        this.email = email;
+        this.senha = senha;
+        this.cidade = cidade;
+        this.tipoCorrida = tipoCorrida;
+       }
+
+    public Motorista(){
+        this("Marcelo","Cnh Ear",5,"marcelo.pereira@gmail.com","ceuazul","Londrina","Entregas");
+    }
+
+    public get
+
 
     public void aceitarCorrida(){
 
