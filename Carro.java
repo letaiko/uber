@@ -1,9 +1,23 @@
 public class Carro {
-    public String modelo;
-    public String marca;
-    public String placa;
-    public String cor;
-    public int ano;
+    private  String modelo;
+    private String  marca;
+    private  String placa;
+    private  String cor;
+    private int ano;
+
+
+    public Carro(String modelo, int ano, String cor, String placa, String marca){
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+        this.placa = placa;
+        this.marca = marca;
+    }
+
+    public Carro(){
+        this("Kicks",2018,"preto","BEE2114","Nissan");
+    }
+
 
     public void ligar(){
 
@@ -20,7 +34,4 @@ public class Carro {
     public void buzinar(){
 
     }
-
-
-
 }
