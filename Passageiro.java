@@ -15,9 +15,17 @@ public class Passageiro {
         this("Joca","joca.silva","jo2345",976554323);
     }
 
+    public String getNome(){
+        return nome;
+    }
 
+    public int getCelular(){
+        return celular;
+    }
 
-
+    public void setNome(String nome){
+        this.nome = nome;
+    }
 
 
     public void chamarCorrida(){
@@ -26,6 +34,7 @@ public class Passageiro {
     public void escolherCategoria(){
 
     }
+
     public void denunciarMotorista(){
 
     }
