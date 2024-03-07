@@ -1,20 +1,23 @@
 public class Pagamento {
-    public String metodoSaldo;
-    public String metodoCartao;
-    public String metodoDinheiro;
-    public String metodoBoleto;
-    public String metodoPix;
-    public Float preco;
-    public Float gorjeta;
+    public boolean metodoSaldo;
+    public boolean metodoCartao;
+    public boolean metodoDinheiro;
+    public boolean metodoBoleto;
+    public boolean metodoPix;
+    public float preco;
+    public float gorjeta;
+
+    public Pagamento(boolean metodoSaldo, boolean metodoCartao, boolean metodoDinheiro, boolean metodoBoleto, boolean metodoPix,float preco, float gorejta ){
+        this.metodoSaldo = metodoSaldo;
+        this.metodoCartao = metodoCartao;
+        this.metodoDinheiro = metodoDinheiro;
+        this.metodoBoleto = metodoBoleto;
+        this.metodoPix = metodoPix;
+        this.preco = preco;
+        this.gorjeta = gorjeta;
+
+    }
 
     public void selecionarMetodo(){
 
     }
-    public void selecionarCartao(){
-
-    }
-    public void carregarCredito(){
-
-    }
-
-}
