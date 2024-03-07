@@ -18,6 +18,17 @@ public class Carro {
         this("Kicks",2018,"preto","BEE2114","Nissan");
     }
 
+    public String getModelo(){
+        return modelo;
+    }
+
+    public String getMarca(){
+        return marca;
+    }
+
+    public void setCor(String cor){
+        this.cor = cor;
+    }
 
     public void ligar(){
 
@@ -34,4 +45,9 @@ public class Carro {
     public void buzinar(){
 
     }
+
+
+
+
+
 }
