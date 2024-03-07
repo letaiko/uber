@@ -22,8 +22,21 @@ public class Motorista {
         this("Marcelo","Cnh Ear",5,"marcelo.pereira@gmail.com","ceuazul","Londrina","Entregas");
     }
 
-    public get
+    public String getNome(){
+        return nome;
+    }
 
+    public int getAvaliacaoM(){
+        return avaliacaoM;
+    }
+
+    public String getTipoCorrida(){
+        return tipoCorrida;
+    }
+
+    public void setAvaliacaoM(int avaliacaoM){
+        this.avaliacaoM = avaliacaoM;
+    }
 
     public void aceitarCorrida(){
 
