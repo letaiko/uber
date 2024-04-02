@@ -1,22 +1,14 @@
-public class Carro {
-    private  String modelo;
-    private String  marca;
-    private  String placa;
-    private  String cor;
-    private int ano;
+public class Carro extends Veiculo{
 
 
-    public Carro(String modelo, int ano, String cor, String placa, String marca){
-        this.modelo = modelo;
-        this.ano = ano;
-        this.cor = cor;
-        this.placa = placa;
-        this.marca = marca;
+
+    public Carro (String modelo, int ano, String cor, String placa, String marca){
+       super(modelo, cor, marca, ano, placa);
     }
 
-    public Carro(){
+    /*public Carro(){
         this("Kicks",2018,"preto","BEE2114","Nissan");
-    }
+    }*/
 
     public String getModelo(){
         return modelo;
